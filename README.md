@@ -1,6 +1,8 @@
-What is Wt ?
+What is myWt ?
 ------------
+myWt is a fork of Wt to test and experiment another approach of networking core (based of uWebSocket) and improve some part of Wt as json lib.
 
+What is Wt ?
 Wt is a C++ library for developing web applications. It consists of:
 
 - libwt, a widget/rendering library
