@@ -44,7 +44,8 @@ public:
   uWebSocket(uWS::HttpResponse<false> *reply,
              uWS::HttpRequest *request,
              http::server::Configuration *serverConfiguration,
-             const Wt::EntryPoint *entryPoint);
+             const Wt::EntryPoint *entryPoint,
+             uWS::Loop *loop);
 
   void reset(uWS::WebSocket<false, true, PerSocketData> *ws);
 
@@ -126,6 +127,7 @@ public:
 private:
   std::string_view msg_;
   WtReplyPtr reply_; 
+  uWS::Loop *loop_;
   uWS::WebSocket<false, true, PerSocketData> *ws_ = nullptr;
   http::server::Configuration *serverConfiguration_;
   uWS::HttpResponse<false> *uwsreply_;

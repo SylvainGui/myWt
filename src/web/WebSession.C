@@ -1029,21 +1029,21 @@ namespace Wt
       return;
 
     /*
-   * It may be that we still need to attach to a session while it is being
-   * destroyed ? I'm not sure why this is useful, but cannot see anything
-   * wrong about it either ?
-   */
+    * It may be that we still need to attach to a session while it is being
+    * destroyed ? I'm not sure why this is useful, but cannot see anything
+    * wrong about it either ?
+    */
     if (session->state_ == State::Dead)
       LOG_WARN_S(session, "attaching to dead session?");
 
     if (!session.get()->attachThreadToLockedHandler())
     {
       /*
-     * We actually have two scenarios:
-     * - attachThread() once to have WApplication::instance() work. This will
-     *   give the warning, and will not work reliably !
-     * - attachThread() in the wtwithqt case should execute what we have above
-     */
+      * We actually have two scenarios:
+      * - attachThread() once to have WApplication::instance() work. This will
+      *   give the warning, and will not work reliably !
+      * - attachThread() in the wtwithqt case should execute what we have above
+      */
       LOG_WARN_S(session,
                  "attachThread(): no thread is holding this application's "
                  "lock ?");

@@ -68,6 +68,7 @@ public:
     ZlibContext *zlibContext = nullptr;
     InflationStream *inflationStream = nullptr;
     DeflationStream *deflationStream = nullptr;
+    std::thread::id id = std::this_thread::get_id();
 };
 
 }

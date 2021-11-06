@@ -57,7 +57,7 @@ public:
              //uWS::WebSocket<false, true, PerSocketData> *ws,
              http::server::Configuration *serverConfiguration,
              const Wt::EntryPoint *entryPoint,
-             bool websocket = false);
+             uWS::Loop *loop);
 
   void reset(uWS::HttpResponse<false> *reply, 
              uWS::HttpRequest *request, 
@@ -120,15 +120,13 @@ public:
   {
 
   }
-  void setmessage(std::string_view os, std::string_view contenttype, std::string_view method)
+  void setmessage(std::string_view os)
   {
     // in_mem_.str("");
     // in_mem_.clear();
     //std::cout << "message post : " << os << std::endl;
     setContentLength(os.length());
     msg_ = os;
-    contenttype_ = contenttype;
-    method_ = method;
 
     in_mem_ << os;
 
@@ -173,6 +171,7 @@ private:
   std::string_view msg_;
   WtReplyPtr reply_; 
   http::server::Configuration *serverConfiguration_;
+  uWS::Loop *loop_;
   uWS::HttpResponse<false> *uwsreply_;
   uWS::HttpRequest *request_;
   uWS::HttpRequest savedrequest_;

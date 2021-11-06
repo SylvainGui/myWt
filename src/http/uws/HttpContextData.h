@@ -23,7 +23,6 @@
 #include <vector>
 #include "MoveOnlyFunction.h"
 
-//#include "../Reply.h"
 
 namespace uWS {
 template<bool> struct HttpResponse;
@@ -49,8 +48,6 @@ private:
     void *upgradedWebSocket = nullptr;
     bool isParsingHttp = false;
 
-    Wt::WServer *wtServer_ = 0;
-    const http::server::Configuration* config_ = 0; 
 };
 
 }

@@ -65,12 +65,6 @@ public:
 
     std::unique_ptr<http::server::uWSRequest> uwsRequest_;
 
-    /// The parser for the incoming request.
-    //http::server::RequestHandler request_parser_;
-
-      /// Recycled reply pointers
-    //http::server::ReplyPtr lastWtReply_, lastProxyReply_, lastStaticReply_;
-
 #ifdef UWS_WITH_PROXY
     ProxyParser proxyParser;
 #endif

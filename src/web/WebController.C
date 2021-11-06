@@ -566,9 +566,9 @@ namespace Wt
       session->queueEvent(event);
 
     /*
-   * Try to take the session lock now to propagate the event to the
-   * application.
-   */
+    * Try to take the session lock now to propagate the event to the
+    * application.
+    */
     {
       WebSession::Handler handler(session, WebSession::Handler::LockOption::TryLock);
     }

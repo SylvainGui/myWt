@@ -182,8 +182,8 @@ public:
         other.topicTree = nullptr;
     }
 
-    TemplatedApp(const http::server::Configuration* config, Wt::WServer* wtServer, SocketContextOptions options = {}) {
-        httpContext = HttpContext<SSL>::create(Loop::get(), config, wtServer, options);
+    TemplatedApp(SocketContextOptions options = {}) {
+        httpContext = HttpContext<SSL>::create(Loop::get(), options);
     }
 
     bool constructorFailed() {

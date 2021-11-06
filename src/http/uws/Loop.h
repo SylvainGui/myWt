@@ -111,6 +111,14 @@ public:
 
         return getLazyLoop().loop;
     }
+    void setThreadId(std::thread::id id){
+        LoopData *loopData = (LoopData *) us_loop_ext((us_loop_t *) this);
+        loopData->id = id;
+    }
+    std::thread::id threadId() const {
+        LoopData *loopData = (LoopData *) us_loop_ext((us_loop_t *) this);
+        return loopData->id;
+    }
 
     /* Freeing the default loop should be done once */
     void free() {

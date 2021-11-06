@@ -122,11 +122,12 @@ namespace http
     uWebSocket::uWebSocket(uWS::HttpResponse<false> *reply, 
                            uWS::HttpRequest *request, 
                            http::server::Configuration *serverConfiguration, 
-                           const Wt::EntryPoint *entryPoint)
+                           const Wt::EntryPoint *entryPoint,
+                           uWS::Loop *loop)
         : uwsreply_(reply), 
           request_(request),
           serverConfiguration_(serverConfiguration), 
-          //isWebSocket_(websocket), 
+          loop_(loop), 
           in_(&in_mem_), 
           out_(&out_buf_)
     {
@@ -162,7 +163,40 @@ namespace http
 
     void uWebSocket::flush(ResponseState state, const WriteCallback &callback)
     {
-      
+      if(std::this_thread::get_id() !=  loop_->threadId())
+      {
+        if(callback)
+          fetchMoreDataCallback_ = callback;
+
+        loop_->defer([this]{
+          const char *data = asio::buffer_cast<const char *>(out_buf_.data());
+          int size = asio::buffer_size(out_buf_.data());
+
+          if (ws_)
+          {
+            
+            ws_->send(std::string_view(data, size), uWS::OpCode::TEXT);
+
+            loop_->defer([=]{
+              if(fetchMoreDataCallback_)
+                fetchMoreDataCallback_(Wt::WebWriteEvent::Completed);
+            });
+          }
+          
+          out_buf_.consume(size);
+
+          if (&in_mem_ != in_)
+          {
+            dynamic_cast<std::fstream *>(in_)->close();
+            delete in_;
+            in_ = &in_mem_;
+          }
+
+          in_mem_.str("");
+          in_mem_.clear();
+        });
+        return;
+      }
       const char *data = asio::buffer_cast<const char *>(out_buf_.data());
       int size = asio::buffer_size(out_buf_.data());
       //std::cout << "---buffer : ------------------ " << size << " % " <<std::endl << std::string_view(data, size)  << std::endl;
@@ -181,8 +215,8 @@ namespace http
       {
         
         ws_->send(std::string_view(data, size), uWS::OpCode::TEXT);
-        auto loop = uWS::Loop::get();
-        loop->defer([=]{
+
+        loop_->defer([=]{
           if(fetchMoreDataCallback_)
             fetchMoreDataCallback_(Wt::WebWriteEvent::Completed);
         });

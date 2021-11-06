@@ -61,14 +61,16 @@ typedef std::function<void ()>  Function;
  * An event to be delivered to a session which is not caused by a web
  * request (or, probably not one for that session).
  */
-struct ApplicationEvent {
-  ApplicationEvent(const std::string& aSessionId,
-		   const Function& aFunction,
-                   const Function& aFallbackFunction = Function())
-    : sessionId(aSessionId),
-      function(aFunction),
-      fallbackFunction(aFallbackFunction)
-  { }
+struct ApplicationEvent
+{
+  ApplicationEvent(const std::string &aSessionId,
+                   const Function &aFunction,
+                   const Function &aFallbackFunction = Function())
+      : sessionId(aSessionId),
+        function(aFunction),
+        fallbackFunction(aFallbackFunction)
+  {
+  }
 
   std::string sessionId;
   Function function;

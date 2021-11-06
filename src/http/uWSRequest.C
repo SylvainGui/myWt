@@ -122,12 +122,12 @@ namespace http
                            //uWS::WebSocket<false, true, PerSocketData> *ws, 
                            http::server::Configuration *serverConfiguration, 
                            const Wt::EntryPoint *entryPoint, 
-                           bool websocket)
+                           uWS::Loop *loop)
         : uwsreply_(reply), 
           request_(request),
-          //ws_(ws), 
+          loop_(loop), 
           serverConfiguration_(serverConfiguration), 
-          isWebSocket_(websocket), 
+          isWebSocket_(false), 
           in_(&in_mem_), 
           out_(&out_buf_)
     {

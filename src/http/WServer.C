@@ -225,9 +225,10 @@ bool WServer::start()
                    {
                      return new std::thread([this, config, streply]()
                                             {
-                                              auto app = ::uWS::App(impl_->serverConfiguration_, this);
+                                              auto app = ::uWS::App();
 
                                               auto loop = uWS::Loop::get();
+                                              loop->setThreadId(std::this_thread::get_id());
 
                                               auto entrypoints = configuration().entryPoints_;
 
@@ -244,7 +245,7 @@ bool WServer::start()
                                                           //std::cerr << "entry get getQuery :" << wtreq << std::endl;
                                                           auto httpResponseData = res->getHttpResponseData();
                                                           if(!httpResponseData->uwsRequest_){
-                                                            httpResponseData->uwsRequest_.reset(new http::server::uWSRequest(res, req, config, &ep));
+                                                            httpResponseData->uwsRequest_.reset(new http::server::uWSRequest(res, req, config, &ep, uWS::Loop::get()));
                                                             //std::cerr << "entry get getQuery :" << httpResponseData->uwsRequest_ << std::endl;
                                                           }
 
@@ -270,14 +271,11 @@ bool WServer::start()
                                                         {
                                                           auto httpResponseData = res->getHttpResponseData();
                                                           if(!httpResponseData->uwsRequest_){
-                                                            httpResponseData->uwsRequest_.reset(new http::server::uWSRequest(res, req, config, &ep));
+                                                            httpResponseData->uwsRequest_.reset(new http::server::uWSRequest(res, req, config, &ep, uWS::Loop::get()));
                                                           }
                                                           auto wtreq = httpResponseData->uwsRequest_.get();
                                                           wtreq->reset(res, req, &ep);
                                                           //auto wtreq = new http::server::uWSRequest(res, req, config, &ep);
-
-                                                          auto contenttype = std::string(req->getHeader("content-type"));
-                                                          auto method = std::string(req->getMethod());
  
 
                                                           res->onData([=, &ep] (auto message, bool complete) {
@@ -285,13 +283,13 @@ bool WServer::start()
                                                               //std::cerr << "---------onData------- " << complete << std::endl << std::endl;
                                                               auto httpResponseData = res->getHttpResponseData();
                                                               if(!httpResponseData->uwsRequest_){
-                                                                httpResponseData->uwsRequest_.reset(new http::server::uWSRequest(res, req, config, &ep));
+                                                                httpResponseData->uwsRequest_.reset(new http::server::uWSRequest(res, req, config, &ep, uWS::Loop::get()));
                                                               }
                                                               auto wtreq = httpResponseData->uwsRequest_.get();
                                                               
                                                               if(complete) {
                                                                 //std::cerr << "---------complete------- " << complete << std::endl << std::endl;
-                                                                wtreq->setmessage(message, contenttype, method);
+                                                                wtreq->setmessage(message);
                                                                 this->webController_->handleRequest(wtreq);
                                                               }
                                                               else
@@ -329,7 +327,7 @@ std::cerr << "---------rest post------- " << std::endl << std::endl;
                                                           * we need later on while upgrading to WebSocket. You must not access req after first return.
                                                           * Here we create a heap allocated struct holding everything we will need later on. */
                                                           std::cout << "ws socket was open!" << std::endl;
-                                                          auto webresponse = new http::server::uWebSocket(res, req, config, &ep);
+                                                          auto webresponse = new http::server::uWebSocket(res, req, config, &ep, uWS::Loop::get());
                                                           this->webController_->handleRequest(webresponse);
 
                                                           struct UpgradeData {

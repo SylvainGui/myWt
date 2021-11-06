@@ -62,13 +62,9 @@ private:
     }
 
     /* Init the HttpContext by registering libusockets event handlers */
-    HttpContext<SSL> *init(const http::server::Configuration* config, Wt::WServer* wtServer) {
+    HttpContext<SSL> *init() {
 
         HttpContextData<SSL> *httpContextData = getSocketContextData();
-
-        httpContextData->wtServer_ = wtServer;
-        httpContextData->config_ = config;
-        std::cerr << "listen " << getSocketContext();
 
         /* Handle socket connections */
         us_socket_context_on_open(SSL, getSocketContext(), [](us_socket_t *s, int /*is_client*/, char */*ip*/, int /*ip_length*/) {
@@ -381,7 +377,7 @@ std::cerr << "close " << s << " - " << httpResponseData << " - " << 0 << std::en
 
 public:
     /* Construct a new HttpContext using specified loop */
-    static HttpContext *create(Loop *loop, const http::server::Configuration* config, Wt::WServer* wtServer, us_socket_context_options_t options = {}) {
+    static HttpContext *create(Loop *loop, us_socket_context_options_t options = {}) {
         HttpContext *httpContext;
 
         httpContext = (HttpContext *) us_create_socket_context(SSL, (us_loop_t *) loop, sizeof(HttpContextData<SSL>), options);
@@ -392,7 +388,7 @@ public:
 
         /* Init socket context data */
         new ((HttpContextData<SSL> *) us_socket_context_ext(SSL, (us_socket_context_t *) httpContext)) HttpContextData<SSL>();
-        return httpContext->init(config, wtServer);
+        return httpContext->init();
     }
 
     /* Destruct the HttpContext, it does not follow RAII */
