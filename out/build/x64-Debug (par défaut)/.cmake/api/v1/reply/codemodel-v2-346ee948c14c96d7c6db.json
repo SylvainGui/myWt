@@ -1,0 +1,1834 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						21
+					]
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						63,
+						69
+					]
+				},
+				{
+					"build" : "examples",
+					"childIndexes" : 
+					[
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "examples"
+				},
+				{
+					"build" : "test",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						52,
+						53,
+						54,
+						55
+					]
+				},
+				{
+					"build" : "src/web",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/web"
+				},
+				{
+					"build" : "src/Wt",
+					"childIndexes" : 
+					[
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/Wt"
+				},
+				{
+					"build" : "src/isapi",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/isapi",
+					"targetIndexes" : 
+					[
+						68
+					]
+				},
+				{
+					"build" : "src/fcgi",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/fcgi"
+				},
+				{
+					"build" : "src/http",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/http",
+					"targetIndexes" : 
+					[
+						67
+					]
+				},
+				{
+					"build" : "src/Wt/Auth",
+					"childIndexes" : 
+					[
+						21
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/Wt/Auth"
+				},
+				{
+					"build" : "src/Wt/Core",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/Wt/Core"
+				},
+				{
+					"build" : "src/Wt/Chart",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/Wt/Chart"
+				},
+				{
+					"build" : "src/Wt/Date",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/Wt/Date"
+				},
+				{
+					"build" : "src/Wt/Dbo",
+					"childIndexes" : 
+					[
+						22
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/Wt/Dbo",
+					"targetIndexes" : 
+					[
+						64
+					]
+				},
+				{
+					"build" : "src/Wt/Json",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/Wt/Json"
+				},
+				{
+					"build" : "src/Wt/Http",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/Wt/Http"
+				},
+				{
+					"build" : "src/Wt/Mail",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/Wt/Mail"
+				},
+				{
+					"build" : "src/Wt/Payment",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/Wt/Payment"
+				},
+				{
+					"build" : "src/Wt/Render",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/Wt/Render"
+				},
+				{
+					"build" : "src/Wt/Signals",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/Wt/Signals"
+				},
+				{
+					"build" : "src/Wt/Test",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/Wt/Test"
+				},
+				{
+					"build" : "src/Wt/Auth/Dbo",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 0,
+					"source" : "src/Wt/Auth/Dbo"
+				},
+				{
+					"build" : "src/Wt/Dbo/backend",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 13,
+					"projectIndex" : 0,
+					"source" : "src/Wt/Dbo/backend",
+					"targetIndexes" : 
+					[
+						65,
+						66
+					]
+				},
+				{
+					"build" : "examples/blog",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/blog",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "examples/charts",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/charts",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "examples/chart3D",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/chart3D",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "examples/codeview",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/codeview",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "examples/composer",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/composer",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "examples/dialog",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/dialog",
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"build" : "examples/dragdrop",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/dragdrop",
+					"targetIndexes" : 
+					[
+						22
+					]
+				},
+				{
+					"build" : "examples/feature",
+					"childIndexes" : 
+					[
+						56,
+						57,
+						58,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64,
+						65,
+						66,
+						67,
+						68,
+						69,
+						70,
+						71,
+						72,
+						73,
+						74,
+						75,
+						76
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/feature"
+				},
+				{
+					"build" : "examples/filetreetable",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/filetreetable",
+					"targetIndexes" : 
+					[
+						24
+					]
+				},
+				{
+					"build" : "examples/filedrop",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/filedrop",
+					"targetIndexes" : 
+					[
+						23
+					]
+				},
+				{
+					"build" : "examples/form",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/form",
+					"targetIndexes" : 
+					[
+						25
+					]
+				},
+				{
+					"build" : "examples/gitmodel",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/gitmodel"
+				},
+				{
+					"build" : "examples/hangman",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/hangman",
+					"targetIndexes" : 
+					[
+						26
+					]
+				},
+				{
+					"build" : "examples/hello",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/hello",
+					"targetIndexes" : 
+					[
+						27
+					]
+				},
+				{
+					"build" : "examples/http-client",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/http-client",
+					"targetIndexes" : 
+					[
+						30
+					]
+				},
+				{
+					"build" : "examples/javascript",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/javascript",
+					"targetIndexes" : 
+					[
+						32
+					]
+				},
+				{
+					"build" : "examples/leaflet",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/leaflet",
+					"targetIndexes" : 
+					[
+						33
+					]
+				},
+				{
+					"build" : "examples/mandelbrot",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/mandelbrot",
+					"targetIndexes" : 
+					[
+						35
+					]
+				},
+				{
+					"build" : "examples/mission",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/mission",
+					"targetIndexes" : 
+					[
+						31
+					]
+				},
+				{
+					"build" : "examples/onethread",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/onethread",
+					"targetIndexes" : 
+					[
+						28
+					]
+				},
+				{
+					"build" : "examples/painting",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/painting",
+					"targetIndexes" : 
+					[
+						41
+					]
+				},
+				{
+					"build" : "examples/planner",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/planner",
+					"targetIndexes" : 
+					[
+						43
+					]
+				},
+				{
+					"build" : "examples/qrlogin",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/qrlogin",
+					"targetIndexes" : 
+					[
+						45
+					]
+				},
+				{
+					"build" : "examples/simplechat",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/simplechat",
+					"targetIndexes" : 
+					[
+						48
+					]
+				},
+				{
+					"build" : "examples/style",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/style",
+					"targetIndexes" : 
+					[
+						50
+					]
+				},
+				{
+					"build" : "examples/te-benchmark",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/te-benchmark"
+				},
+				{
+					"build" : "examples/treelist",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/treelist",
+					"targetIndexes" : 
+					[
+						19
+					]
+				},
+				{
+					"build" : "examples/treeview",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/treeview",
+					"targetIndexes" : 
+					[
+						57
+					]
+				},
+				{
+					"build" : "examples/treeview-dragdrop",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/treeview-dragdrop",
+					"targetIndexes" : 
+					[
+						56
+					]
+				},
+				{
+					"build" : "examples/webgl",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/webgl",
+					"targetIndexes" : 
+					[
+						60
+					]
+				},
+				{
+					"build" : "examples/widgetgallery",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/widgetgallery",
+					"targetIndexes" : 
+					[
+						62
+					]
+				},
+				{
+					"build" : "examples/wt-homepage",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/wt-homepage",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "examples/wtwithqt",
+					"childIndexes" : 
+					[
+						78
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/wtwithqt"
+				},
+				{
+					"build" : "examples/feature/auth1",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/auth1",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "examples/feature/auth2",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/auth2",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "examples/feature/broadcast",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/broadcast",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "examples/feature/client-ssl-auth",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/client-ssl-auth",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "examples/feature/dbo",
+					"childIndexes" : 
+					[
+						77
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/dbo",
+					"targetIndexes" : 
+					[
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "examples/feature/locale",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/locale",
+					"targetIndexes" : 
+					[
+						34
+					]
+				},
+				{
+					"build" : "examples/feature/mediaplayer",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/mediaplayer",
+					"targetIndexes" : 
+					[
+						36
+					]
+				},
+				{
+					"build" : "examples/feature/miniwebgl",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/miniwebgl",
+					"targetIndexes" : 
+					[
+						37
+					]
+				},
+				{
+					"build" : "examples/feature/multiple_servers",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/multiple_servers",
+					"targetIndexes" : 
+					[
+						38
+					]
+				},
+				{
+					"build" : "examples/feature/oauth",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/oauth",
+					"targetIndexes" : 
+					[
+						39
+					]
+				},
+				{
+					"build" : "examples/feature/oidc",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/oidc",
+					"targetIndexes" : 
+					[
+						40
+					]
+				},
+				{
+					"build" : "examples/feature/paypal",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/paypal",
+					"targetIndexes" : 
+					[
+						42
+					]
+				},
+				{
+					"build" : "examples/feature/postall",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/postall",
+					"targetIndexes" : 
+					[
+						44
+					]
+				},
+				{
+					"build" : "examples/feature/scrollvisibility",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/scrollvisibility",
+					"targetIndexes" : 
+					[
+						46
+					]
+				},
+				{
+					"build" : "examples/feature/serverpush",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/serverpush",
+					"targetIndexes" : 
+					[
+						47
+					]
+				},
+				{
+					"build" : "examples/feature/socketnotifier",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/socketnotifier",
+					"targetIndexes" : 
+					[
+						49
+					]
+				},
+				{
+					"build" : "examples/feature/suggestionpopup",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/suggestionpopup",
+					"targetIndexes" : 
+					[
+						51
+					]
+				},
+				{
+					"build" : "examples/feature/template-fun",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/template-fun",
+					"targetIndexes" : 
+					[
+						61
+					]
+				},
+				{
+					"build" : "examples/feature/urlparams",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/urlparams",
+					"targetIndexes" : 
+					[
+						58
+					]
+				},
+				{
+					"build" : "examples/feature/video",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/video",
+					"targetIndexes" : 
+					[
+						59
+					]
+				},
+				{
+					"build" : "examples/feature/widgetset",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "examples/feature/widgetset",
+					"targetIndexes" : 
+					[
+						29
+					]
+				},
+				{
+					"build" : "examples/feature/dbo/tutorial9",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 60,
+					"projectIndex" : 0,
+					"source" : "examples/feature/dbo/tutorial9",
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"build" : "examples/wtwithqt/lib",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 55,
+					"projectIndex" : 0,
+					"source" : "examples/wtwithqt/lib"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64,
+						65,
+						66,
+						67,
+						68,
+						69,
+						70,
+						71,
+						72,
+						73,
+						74,
+						75,
+						76,
+						77,
+						78
+					],
+					"name" : "WT",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64,
+						65,
+						66,
+						67,
+						68,
+						69
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 54,
+					"id" : "Home.wt::@98505fc839407cb63fd6",
+					"jsonFile" : "target-Home.wt-Debug-d8de4a60877b9f490211.json",
+					"name" : "Home.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 56,
+					"id" : "auth1.wt::@fbfcf6c8e324dab805ea",
+					"jsonFile" : "target-auth1.wt-Debug-336caa7607a5a93b06d2.json",
+					"name" : "auth1.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 57,
+					"id" : "auth2.wt::@22af4345942ab8ecd115",
+					"jsonFile" : "target-auth2.wt-Debug-6211d761714bfe07586d.json",
+					"name" : "auth2.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "blog.wt::@f533c6eec2cdaabac0b0",
+					"jsonFile" : "target-blog.wt-Debug-ce9d44b83ecc41b8dc60.json",
+					"name" : "blog.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 58,
+					"id" : "broadcast.wt::@a2d71b35c8ce51eb2648",
+					"jsonFile" : "target-broadcast.wt-Debug-4edbb97d6860db549fde.json",
+					"name" : "broadcast.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 25,
+					"id" : "chart3D.wt::@010ee22af0970731912b",
+					"jsonFile" : "target-chart3D.wt-Debug-531f5c34f67f8d0cde7a.json",
+					"name" : "chart3D.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 24,
+					"id" : "charts.wt::@bdcf509db1739369c97b",
+					"jsonFile" : "target-charts.wt-Debug-b40d0b6576d00afc6e4d.json",
+					"name" : "charts.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 59,
+					"id" : "client-ssl-auth.wt::@9cbf6cf569551f070b39",
+					"jsonFile" : "target-client-ssl-auth.wt-Debug-17512d9ea0f07b42511c.json",
+					"name" : "client-ssl-auth.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 26,
+					"id" : "codingview.wt::@a71413c1cd4c8732694c",
+					"jsonFile" : "target-codingview.wt-Debug-b122519af6fcb3b4ab77.json",
+					"name" : "codingview.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 27,
+					"id" : "composer.wt::@410900efc55edf53547a",
+					"jsonFile" : "target-composer.wt-Debug-c8d900e99e765240a522.json",
+					"name" : "composer.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 60,
+					"id" : "dbo-tutorial1::@da46369d2219d506db0e",
+					"jsonFile" : "target-dbo-tutorial1-Debug-77eb71fff9e8a2f1c395.json",
+					"name" : "dbo-tutorial1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 60,
+					"id" : "dbo-tutorial2::@da46369d2219d506db0e",
+					"jsonFile" : "target-dbo-tutorial2-Debug-9a88c0063c7657681a84.json",
+					"name" : "dbo-tutorial2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 60,
+					"id" : "dbo-tutorial3::@da46369d2219d506db0e",
+					"jsonFile" : "target-dbo-tutorial3-Debug-5c37840ec2ee2967d521.json",
+					"name" : "dbo-tutorial3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 60,
+					"id" : "dbo-tutorial4::@da46369d2219d506db0e",
+					"jsonFile" : "target-dbo-tutorial4-Debug-196b6e4258155705d67e.json",
+					"name" : "dbo-tutorial4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 60,
+					"id" : "dbo-tutorial5::@da46369d2219d506db0e",
+					"jsonFile" : "target-dbo-tutorial5-Debug-d4582095d4a91736102d.json",
+					"name" : "dbo-tutorial5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 60,
+					"id" : "dbo-tutorial6::@da46369d2219d506db0e",
+					"jsonFile" : "target-dbo-tutorial6-Debug-b4c2458d4d992a7a3cc4.json",
+					"name" : "dbo-tutorial6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 60,
+					"id" : "dbo-tutorial7::@da46369d2219d506db0e",
+					"jsonFile" : "target-dbo-tutorial7-Debug-a321e8a6c0220207322c.json",
+					"name" : "dbo-tutorial7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 60,
+					"id" : "dbo-tutorial8::@da46369d2219d506db0e",
+					"jsonFile" : "target-dbo-tutorial8-Debug-fc92b92bd35f22519289.json",
+					"name" : "dbo-tutorial8",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 77,
+					"id" : "dbo-tutorial9::@8bab373182281641b6f9",
+					"jsonFile" : "target-dbo-tutorial9-Debug-669dea611424109bf19d.json",
+					"name" : "dbo-tutorial9",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 49,
+					"id" : "demotreelist.wt::@bbc9de8693d547773101",
+					"jsonFile" : "target-demotreelist.wt-Debug-44ecf14249c3052a3d31.json",
+					"name" : "demotreelist.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 28,
+					"id" : "dialog.wt::@a2bedab3eda6b16f4c63",
+					"jsonFile" : "target-dialog.wt-Debug-8ada6f5fcc4e4a729f3e.json",
+					"name" : "dialog.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doc-Debug-b5c969d78813aac48044.json",
+					"name" : "doc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 29,
+					"id" : "dragdrop.wt::@c9c77caff27678e1075a",
+					"jsonFile" : "target-dragdrop.wt-Debug-66e4d1b3bdb77282a62b.json",
+					"name" : "dragdrop.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 32,
+					"id" : "filedrop.wt::@02e46a5d9fdd0037dd6f",
+					"jsonFile" : "target-filedrop.wt-Debug-7f1460e608e7139b2583.json",
+					"name" : "filedrop.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 31,
+					"id" : "filetreetable.wt::@8dc32d2c86dba63bb769",
+					"jsonFile" : "target-filetreetable.wt-Debug-0fb6104c558a717dcbdb.json",
+					"name" : "filetreetable.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "formexample.wt::@1ef4a3be09a317a4af97",
+					"jsonFile" : "target-formexample.wt-Debug-6c8aec49db8b1a4679b4.json",
+					"name" : "formexample.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "hangman.wt::@013bcd813a2e5f870dfc",
+					"jsonFile" : "target-hangman.wt-Debug-229ae01080d28812538b.json",
+					"name" : "hangman.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "hello.wt::@0ca29bb718b55d66006f",
+					"jsonFile" : "target-hello.wt-Debug-51000c87197aff5206dc.json",
+					"name" : "hello.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 42,
+					"id" : "hello1thread.wt::@507c6f69a15a287e65dd",
+					"jsonFile" : "target-hello1thread.wt-Debug-b603ca1fbb7e12a84487.json",
+					"name" : "hello1thread.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 76,
+					"id" : "hellowidgetset.wt::@c34aaef68a2c08935bef",
+					"jsonFile" : "target-hellowidgetset.wt-Debug-166d607c3c8d4234fbe7.json",
+					"name" : "hellowidgetset.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 37,
+					"id" : "http-client.wt::@ba730e9b0bcaf6e00af1",
+					"jsonFile" : "target-http-client.wt-Debug-76330c44627753266adb.json",
+					"name" : "http-client.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 41,
+					"id" : "impossible.wt::@cecfe3c39fb76617d99b",
+					"jsonFile" : "target-impossible.wt-Debug-93c9f17d07b7ed10429a.json",
+					"name" : "impossible.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 38,
+					"id" : "javascript.wt::@58fd373d1db3c11fa450",
+					"jsonFile" : "target-javascript.wt-Debug-7ba550fd88adbe661736.json",
+					"name" : "javascript.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 39,
+					"id" : "leaflet.wt::@b43346535eb0433b6cd4",
+					"jsonFile" : "target-leaflet.wt-Debug-7c060ff59e4d03746dc0.json",
+					"name" : "leaflet.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 61,
+					"id" : "locale.wt::@114eef1e27dc83da5969",
+					"jsonFile" : "target-locale.wt-Debug-dfa194c6b31ac0adfd50.json",
+					"name" : "locale.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 40,
+					"id" : "mandelbrot.wt::@a4ab428c2ce4120d4ff2",
+					"jsonFile" : "target-mandelbrot.wt-Debug-fbe17124041f1f2a0b47.json",
+					"name" : "mandelbrot.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 62,
+					"id" : "mediaplayer.wt::@b73e749de81b1f6dc47c",
+					"jsonFile" : "target-mediaplayer.wt-Debug-db88623a8df1270107e1.json",
+					"name" : "mediaplayer.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 63,
+					"id" : "miniwebgl.wt::@dd11e5971e763de5e341",
+					"jsonFile" : "target-miniwebgl.wt-Debug-f13bd7e515076ecaaff9.json",
+					"name" : "miniwebgl.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 64,
+					"id" : "multiple.wt::@5311c295ec929a19d88d",
+					"jsonFile" : "target-multiple.wt-Debug-1f49bf2104d79f1ae6de.json",
+					"name" : "multiple.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 65,
+					"id" : "oauth.wt::@6159390fd4bec37bf8ec",
+					"jsonFile" : "target-oauth.wt-Debug-462ed494ecd691aa9068.json",
+					"name" : "oauth.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 66,
+					"id" : "oidc.wt::@d96edf2038637c16717d",
+					"jsonFile" : "target-oidc.wt-Debug-2fbbd63899a3f5a0834d.json",
+					"name" : "oidc.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "paintexample.wt::@4dcd2e7eccbca823c6ca",
+					"jsonFile" : "target-paintexample.wt-Debug-22cef5f6704f06a6c124.json",
+					"name" : "paintexample.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 67,
+					"id" : "paypal.wt::@b55d95bd1ca62d905a73",
+					"jsonFile" : "target-paypal.wt-Debug-1011cd72d7b3b868cb70.json",
+					"name" : "paypal.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 44,
+					"id" : "planner.wt::@b0faf329459aaa8a3ab7",
+					"jsonFile" : "target-planner.wt-Debug-0e446e115f5272a8ec87.json",
+					"name" : "planner.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 68,
+					"id" : "postall.wt::@cd9f4e27639b2e41005e",
+					"jsonFile" : "target-postall.wt-Debug-81ae66700eea29cdb4a5.json",
+					"name" : "postall.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 45,
+					"id" : "qrlogin.wt::@a43a8fa2daf81ce5d10a",
+					"jsonFile" : "target-qrlogin.wt-Debug-60d1c525483acb8ebcd9.json",
+					"name" : "qrlogin.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 69,
+					"id" : "scrollvisibility.wt::@459a2e7e1a555ea8f897",
+					"jsonFile" : "target-scrollvisibility.wt-Debug-8fc42f1b90bbd25f6ec4.json",
+					"name" : "scrollvisibility.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 70,
+					"id" : "serverpush.wt::@d3e45748d153ea3f41d0",
+					"jsonFile" : "target-serverpush.wt-Debug-5348bb740ed92ac27e08.json",
+					"name" : "serverpush.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 46,
+					"id" : "simplechat.wt::@6dddde1bc92a18b88d19",
+					"jsonFile" : "target-simplechat.wt-Debug-70c722b2714a47d31cde.json",
+					"name" : "simplechat.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 71,
+					"id" : "socketnotifier.wt::@3c58df6740ebbc365078",
+					"jsonFile" : "target-socketnotifier.wt-Debug-c9dab2837648663b82c1.json",
+					"name" : "socketnotifier.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 47,
+					"id" : "styleexample.wt::@8ad4d6e9b050bd71b14c",
+					"jsonFile" : "target-styleexample.wt-Debug-7479f6d2901f387fd597.json",
+					"name" : "styleexample.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 72,
+					"id" : "suggestionpopup.wt::@3c9b8ab46e99ce8e6846",
+					"jsonFile" : "target-suggestionpopup.wt-Debug-de17a092540f94930ce1.json",
+					"name" : "suggestionpopup.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "test.http::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test.http-Debug-629b110d269e8b31df92.json",
+					"name" : "test.http",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "test.mssqlserver::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test.mssqlserver-Debug-e8449b9a23d4f5f75a99.json",
+					"name" : "test.mssqlserver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "test.sqlite3::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test.sqlite3-Debug-45bbaecd9d3eaa072d8f.json",
+					"name" : "test.sqlite3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "test.wt::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test.wt-Debug-bf54cad2b7885c6f8539.json",
+					"name" : "test.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 51,
+					"id" : "treeviewdragdrop.wt::@817d501170c4f0a23485",
+					"jsonFile" : "target-treeviewdragdrop.wt-Debug-8425f875c584a9427bdb.json",
+					"name" : "treeviewdragdrop.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 50,
+					"id" : "treeviewexample.wt::@3c54ccfdb22adf6603ca",
+					"jsonFile" : "target-treeviewexample.wt-Debug-5458efbd3d8a56450039.json",
+					"name" : "treeviewexample.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "urlparams.wt::@dac62ebfd96770cd665f",
+					"jsonFile" : "target-urlparams.wt-Debug-c7f841a211ab99c39d9e.json",
+					"name" : "urlparams.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 75,
+					"id" : "video.wt::@4976fbb45dec6138eb01",
+					"jsonFile" : "target-video.wt-Debug-da803a00aed8542b53bc.json",
+					"name" : "video.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 52,
+					"id" : "webgl.wt::@3fd5ac2ca8cbad8e2e63",
+					"jsonFile" : "target-webgl.wt-Debug-b2800ab14fa6eba23bf4.json",
+					"name" : "webgl.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 73,
+					"id" : "widgetfunction.wt::@9fee87f6220715f0b6e0",
+					"jsonFile" : "target-widgetfunction.wt-Debug-f849a0fbe95057afb6f3.json",
+					"name" : "widgetfunction.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 53,
+					"id" : "widgetgallery.wt::@cc3b8849fde55eb35386",
+					"jsonFile" : "target-widgetgallery.wt-Debug-e627309cbf65c1ae9a4b.json",
+					"name" : "widgetgallery.wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "wt::@145eef247bfb46b6828c",
+					"jsonFile" : "target-wt-Debug-c9009bdfee83da412b14.json",
+					"name" : "wt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "wtdbo::@bc71197fb47f244a7207",
+					"jsonFile" : "target-wtdbo-Debug-dc5172e7c3afd680d89c.json",
+					"name" : "wtdbo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 22,
+					"id" : "wtdbomssqlserver::@b55fd146842f3c4a6b69",
+					"jsonFile" : "target-wtdbomssqlserver-Debug-339915a2427c2a2317d5.json",
+					"name" : "wtdbomssqlserver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 22,
+					"id" : "wtdbosqlite3::@b55fd146842f3c4a6b69",
+					"jsonFile" : "target-wtdbosqlite3-Debug-94bab95000a2983f2b73.json",
+					"name" : "wtdbosqlite3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "wthttp::@8197c89eb9db1dcb42c8",
+					"jsonFile" : "target-wthttp-Debug-38495277050581fbc632.json",
+					"name" : "wthttp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "wtisapi::@e631273c64bf741582d3",
+					"jsonFile" : "target-wtisapi-Debug-da4e4642f36b38102c0f.json",
+					"name" : "wtisapi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "wttest::@145eef247bfb46b6828c",
+					"jsonFile" : "target-wttest-Debug-de413ecfaac772d8de53.json",
+					"name" : "wttest",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/gsylv/Desktop/wt-4.5.0-rc1/out/build/x64-Debug (par défaut)",
+		"source" : "C:/Users/gsylv/Desktop/wt-4.5.0-rc1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}
